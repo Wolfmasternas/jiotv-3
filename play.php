@@ -134,6 +134,10 @@ html {
 <div id="player">
 <video id="video" style="width:100%;height:100%;"></video>
 </div>
+<video hideControls="false" autoplay controls crossorigin poster="http://jiotv.catchup.cdn.jio.com/dare_images/images/<?php echo $_REQUEST["c"]; ?>.png" playsinline>
+
+    <source type="application/x-mpegURL" src="autoq.php?c=<?php echo $_REQUEST["c"]; ?>"> </video>
+</body>
 <script>
   setTimeout(videovisible, 4000)
 function videovisible() {
