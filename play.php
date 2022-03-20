@@ -119,21 +119,8 @@ html {
 
 </head>
 <body>
-  <div id="loading" class="loading">
-<div class="loading-text">
-    <span class="loading-text-words">W</span>
-    <span class="loading-text-words">O</span>
-    <span class="loading-text-words">L</span>
-    <span class="loading-text-words">F</span>
-    <span class="loading-text-words">-</span>
-    <span class="loading-text-words">T</span>
-    <span class="loading-text-words">V</span>
-</div>
-</div>
 
-<div id="player">
-<video id="video" style="width:100%;height:100%;"></video>
-</div>
+
 <video hideControls="false" autoplay controls crossorigin poster="http://jiotv.catchup.cdn.jio.com/dare_images/images/<?php echo $_REQUEST["c"]; ?>.png" playsinline>
 
     <source type="application/x-mpegURL" src="autoq.php?c=<?php echo $_REQUEST["c"]; ?>"> </video>
